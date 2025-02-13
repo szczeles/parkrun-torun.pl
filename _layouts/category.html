@@ -1,0 +1,18 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<a id='showall' class="btn btn--info" style="display: none" href="#" onclick="showAll();return false;">Pokaż wszystkie biegi</a>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    hideOld()
+  });
+</script>
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% include posts-category.html taxonomy=page.taxonomy type=entries_layout %}
+</div>

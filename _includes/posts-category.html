@@ -1,0 +1,7 @@
+{% assign posts = site.categories[include.taxonomy] | where_exp: "post", "post.hidden != true" %}
+
+{% assign posts = posts | reverse %}
+
+{%- for post in posts -%}
+  {% include archive-single.html %}
+{%- endfor -%}

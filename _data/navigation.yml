@@ -1,0 +1,9 @@
+main:
+- title: "Grand Prix Województwa"
+  url: /grand-prix-wojewodztwa
+- title: "Łubianka Grand Prix Cross"
+  url: /lubianka
+- title: "Grand Prix Torunia"
+  url: /grand-prix-torunia
+- title: "Wszystkie biegi"
+  url: /categories
