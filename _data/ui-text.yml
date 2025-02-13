@@ -1089,7 +1089,7 @@ pl: &DEFAULT_PL
   meta_label                 :
   tags_label                 : "Tagi:"
   categories_label           : "Kategorie:"
-  date_label                 : "Ostatnia aktualizacja:"
+  date_label                 : "Data biegu:"
   comments_label             : "Zostaw komentarz"
   comments_title             : "Komentarze"
   more_label                 : "Dowiedz się więcej"

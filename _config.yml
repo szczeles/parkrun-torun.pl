@@ -324,3 +324,5 @@ defaults:
 
 after_footer_scripts:
   - /assets/js/date-filter.js
+
+date_format: "%d.%m.%Y"

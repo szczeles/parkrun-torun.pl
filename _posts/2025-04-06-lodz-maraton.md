@@ -4,5 +4,5 @@ categories:
 - Pozostałe biegi
 ---
 
-![logo](/assets/images/lodz_maraton.png)
+![logo]({{ site.url }}{{ site.baseurl }}/assets/images/lodz_maraton.png)
 
