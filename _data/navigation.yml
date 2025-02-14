@@ -5,5 +5,7 @@ main:
   url: /lubianka
 - title: "Grand Prix Torunia"
   url: /grand-prix-torunia
+- title: "Pozostałe biegi"
+  url: /pozostale-biegi
 - title: "Wszystkie biegi"
   url: /categories
