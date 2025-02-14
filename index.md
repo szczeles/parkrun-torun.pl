@@ -15,7 +15,7 @@ feature_row:
     alt: "gp łubianki"
     title: "Łubianka Grand Prix Cross"
     url: /lubianka
-    btn_label: "Więcej"
+    btn_label: "Lista biegów"
     btn_class: "btn--primary"
   - image_path: /assets/images/gpt.jpg
     alt: "gp torunia"
