@@ -12,7 +12,7 @@ categories:
 * Regulaminy: [Maraton](https://online.datasport.pl/zapisy/portal/regulaminy/regulamin_10152.pdf), [10km](https://online.datasport.pl/zapisy/portal/regulaminy/regulamin_10153.pdf), [sztafety Ekiden](https://online.datasport.pl/zapisy/portal/regulaminy/regulamin_10157.pdf), [sztafety Half&Half](https://online.datasport.pl/zapisy/portal/regulaminy/regulamin_10154.pdf)
 * Listy zawodników: [Maraton](https://online.datasport.pl/zapisy/portal/listy/?zawody=10152), [10km](https://online.datasport.pl/zapisy/portal/listy/?zawody=10153), [sztafety Ekiden](https://online.datasport.pl/zapisy/portal/listy/?zawody=10157), [sztafety Hald&Half](https://online.datasport.pl/zapisy/portal/listy/?zawody=10154)
 
-## Organizacja - Maraton
+## Organizacja
 * start (9:00) i meta w [Atlas Arenie](https://maps.app.goo.gl/pdmmgwCGQ6JtFFNV9)
 * dojazd: 187km (ok 2h)
 * trasa z atestem PZLA
