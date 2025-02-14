@@ -5,6 +5,7 @@ categories:
 ---
 
 # 5km, Myślęcinek
+
 * [Profil FB](https://www.facebook.com/polmaratonbydgoski)
 * [Regulamin](https://s3-eu-west-1.amazonaws.com/sm-fotos.sportmaniacs.com/back/670b6914-d598-4f7e-8e0d-4542ac1f2cf6-P%C3%B3%C5%82maraton%20Bydgoski%202025%20Regulamin.pdf)
 * [Zapisy i listy startowe](https://sportmaniacs.com/pl/services/inscription/pmaraton-bydgoski---festiwal-biegw)
