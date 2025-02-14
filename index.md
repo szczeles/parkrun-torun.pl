@@ -9,7 +9,7 @@ feature_row:
     alt: "grand prix województwa"
     title: "Grand Prix Województwa"
     url: /grand-prix-wojewodztwa
-    btn_label: "Więcej"
+    btn_label: "Lista biegów"
     btn_class: "btn--primary"
   - image_path: /assets/images/lubianka.jpg
     alt: "gp łubianki"
@@ -21,7 +21,7 @@ feature_row:
     alt: "gp torunia"
     title: "Grand Prix Torunia"
     url: /grand-prix-torunia
-    btn_label: "Więcej"
+    btn_label: "Lista biegów"
     btn_class: "btn--primary"
 feature_row2:
   - image_path: /assets/images/koszulka.jpg
@@ -29,7 +29,7 @@ feature_row2:
     title: "Wszystkie biegi"
     excerpt: "Gdzie w okolicy można zobaczyć niebieskie koszulki?"
     url: /categories
-    btn_label: "Więcej"
+    btn_label: "Lista biegów"
     btn_class: "btn--primary"
 ---
 
