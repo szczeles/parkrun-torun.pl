@@ -19,6 +19,8 @@ categories:
 
 ## Zdjęcia
 
+![drużyna]({{ site.url }}{{ site.baseurl }}/assets/images/2025-01-12-lubianka-styczen.jpg)
+
 * [Album Oli](https://www.facebook.com/media/set/?vanity=a.sluniecka.fotografia&set=a.659600486394945)
 * [Zdjęcia organizatora](https://www.facebook.com/lubiankagrandprixcross/posts/pfbid0Qtd8vf518SvaFJAzTucXisk81oit6JhnmtJ4zCrBHkWVQJRaXsykaqxM3jwVtyoYl)
 
