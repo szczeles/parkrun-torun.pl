@@ -1,8 +1,10 @@
 ---
-title: XXXV Bieg im. Tomasza Hopfera (Janowiec Wielkopolski)
+title: Janowiec Wielkopolski
 categories:
 - Grand Prix Województwa
 ---
+
+# XXXV Bieg im. Tomasza Hopfera
 
 ## Linki
 * [Profil FB](https://www.facebook.com/biegi.hopfera)
