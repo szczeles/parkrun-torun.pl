@@ -10,6 +10,7 @@ categories:
 * [Regulamin](https://zapisy.sts-timing.pl/TrylogiaTorunskichLegend/Regulamin%205km_marzec.pdf)
 * [Zapisy](https://zapisy.sts-timing.pl/TrylogiaTorunskichLegend/) - do 1 marca
 * [Lista startowa 5km](https://zapisy.sts-timing.pl/TrylogiaTorunskichLegend/lista.php#lista-1)
+* [Wyniki](https://live.sts-timing.pl/Legendarna5-tka/)
 
 # Opłaty
 * 5km:

@@ -3,7 +3,7 @@
 ## Local run
 
 ```
-$ sudo docker run -p 4000:4000 --rm -ti -v `pwd`:/srv/jekyll jekyll/jekyll:latest bash
+docker run -p 4000:4000 --rm -ti -v `pwd`:/srv/jekyll jekyll/jekyll:latest bash
 ```
 
 Inside container:
