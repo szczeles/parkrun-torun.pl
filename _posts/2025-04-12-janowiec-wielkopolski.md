@@ -13,6 +13,22 @@ categories:
 * [Lista zawodników](https://online.datasport.pl/zapisy/portal/listy/?zawody=10705)
 * [Garmin](https://connect.garmin.com/modern/event/f7ae6692-5b29-49f1-b231-c568d2692276)
 
+## Wyniki
+
+* [Wyniki](https://wyniki.datasport.pl/results5508/indexnew.php)
+* Podium:
+    * Gosia K. - IIm kat
+    * Edyta - IIIm kat
+    * Krysia - Im kat
+* Drużynowo - VIIIm
+
+
+## Zdjęcia
+
+![drużynowe]({{ site.url }}{{ site.baseurl }}/assets/images/{{ page.path | split: "/" | last | split: "." | first }}.jpg)
+* [album Oli](https://www.facebook.com/media/set?vanity=a.sluniecka.fotografia&set=a.726378869717106)
+* [album Darka](https://www.facebook.com/media/set/?vanity=100085400623360&set=a.650930561096959)
+
 ## Opłaty
 * do 6 kwietnia: 70zł (ew. +60zł za koszulkę)
 * zniżka dla finiszerów cyklu 2024 - zaznaczane pole "Żniżka" podczas rejestracji (-15zł)

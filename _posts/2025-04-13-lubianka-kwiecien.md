@@ -13,3 +13,14 @@ categories:
 * Dystanse:
   * Bieg główny: 8,5km
   * Bieg towarzyszący: 5km
+
+## Wyniki
+
+* [8.5km](http://gpclubianka.pl/wp-content/uploads/2025/04/G-prezydencki.pdf)
+* [4.4km](http://gpclubianka.pl/wp-content/uploads/2025/04/T-prezydencki.pdf)
+
+## Zdjęcia
+
+![drużynowe]({{ site.url }}{{ site.baseurl }}/assets/images/{{ page.path | split: "/" | last | split: "." | first }}.jpg)
+
+* [album Oli](https://www.facebook.com/media/set?vanity=a.sluniecka.fotografia&set=a.726834753004851)
