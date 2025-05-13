@@ -1,0 +1,220 @@
+<meta charset="utf8" />
+<html>
+
+<head>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.13.0/sql-wasm.js'></script>
+  <script>
+    const url = "https://parkrun-torun.pl/results/results.db"
+    initSqlJs({
+      locateFile: file => `https://sql.js.org/dist/${file}`
+    }).then(function (SQL) {
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', url, true);
+      xhr.responseType = 'arraybuffer';
+
+      xhr.onload = e => {
+        const uInt8Array = new Uint8Array(xhr.response);
+        window.db = new SQL.Database(uInt8Array);
+        const contents = window.db.exec("SELECT name, team, id FROM results ORDER BY name");
+        const runnersDiv = document.getElementById("runners");
+        contents[0].values.forEach(element => {
+          const label = document.createElement("label");
+          const checkbox = document.createElement("input")
+          checkbox.setAttribute('type', 'checkbox')
+          checkbox.setAttribute('checked', 'true')
+          checkbox.setAttribute('runner-id', element[2])
+          checkbox.setAttribute('onclick', 'refresh()')
+          label.append(checkbox)
+          if (element[1]) {
+            label.append(document.createTextNode(`${element[0]} (${element[1]})`))
+          } else {
+            label.append(document.createTextNode(element[0]))
+          }
+          runnersDiv.appendChild(label)
+        });
+        refresh();
+      };
+      xhr.send();
+    });
+
+    function refreshIndividualResults(minRuns, excludedRunners) {
+      sql = `
+      with base as (
+          select * from results where total_runs >= ${minRuns} and id not in (${excludedRunners.join(',')})
+      ),
+      open_rank as (
+          select *,
+              row_number() over (partition by gender order by avg_result) as rank_open
+          from base
+      ),
+      with_ranks as (
+        select *, null as rank_category from open_rank where rank_open <= 3
+        union all
+        select *, row_number() over (partition by category order by avg_result) from open_rank where rank_open > 3
+      )
+      select *,
+        gender || ": " || rank_open as place_open,
+        category || ": " || rank_category as place_category
+      from with_ranks
+      order by avg_result;
+      `
+      const contents = window.db.exec(sql);
+      console.log(contents);
+      table = document.getElementById('results-individual')
+      table.innerHTML = '';
+      columns = [
+        "name",
+        "team",
+        "result_janowiec",
+        "result_fabianki",
+        "avg_result_str",
+        "place_open",
+        "place_category"
+      ]
+      for (let [index, entry] of contents[0].values.entries()) {
+        runner = Object.fromEntries(contents[0].columns.map((k, i) => [k, entry[i]]));
+        console.log(runner);
+        const row = document.createElement("tr");
+        const place = document.createElement("td")
+        place.append(document.createTextNode(index + 1))
+        row.append(place)
+        columns.forEach((item) => {
+          const col = document.createElement("td")
+          col.append(runner[item] || "")
+          row.append(col)
+        })
+        table.appendChild(row)
+      }
+    }
+
+    function refreshTeamResults(minRuns, excludedRunners) {
+      sql = `
+      with base as (
+          select * from results where total_runs >= ${minRuns} and id not in (${excludedRunners.join(',')})
+      ),
+      matching_teams as (
+          select team, sum(gender='M') as sum_m, sum(gender='K') as sum_k from base group by team
+          having sum_m >=2 and sum_k >=2 and sum_m + sum_k >=5
+      ),
+      matching_runners as (
+          select base.*, row_number() over (partition by team, gender order by avg_result) as team_scoring from base
+          join matching_teams using (team)
+      ),
+      fifth_time as (
+          select *, row_number() over (partition by team order by avg_result) as fifth_time from matching_runners
+          where team_scoring = 3
+      ),
+      team_scores as (
+          select team, name, avg_result, avg_result_str from matching_runners
+          where team_scoring <=2
+          union all
+          select team, name, avg_result, avg_result_str from fifth_time
+          where fifth_time = 1
+          order by team, avg_result
+      )
+      select team, time(sum(avg_result), 'unixepoch') as total_time, json_group_array(json_object('name', name, 'time', avg_result_str)) as scoring_runners from team_scores
+      group by team
+      order by sum(avg_result);
+      `
+      const contents = window.db.exec(sql);
+      table = document.getElementById('results-team')
+      table.innerHTML = '';
+      for (let [index, entry] of contents[0].values.entries()) {
+        const row = document.createElement("tr");
+        const place = document.createElement("td")
+        place.append(document.createTextNode(index + 1))
+        row.append(place)
+        const team = document.createElement("td")
+        team.append(entry[0])
+        row.append(team)
+        JSON.parse(entry[2]).forEach((p) => {
+          runner = document.createElement("td")
+          runner.append(`${p.name} (${p.time})`)
+          row.append(runner)
+        })
+        const total = document.createElement("td")
+        total.append(entry[1])
+        row.append(total)
+        table.appendChild(row)
+      }
+    }
+
+    function refresh() {
+      minRuns = document.getElementById('min-runs').value
+      excludedRunners = []
+      document.querySelectorAll("input[type='checkbox']:not(:checked)").forEach((item) => {
+        excludedRunners.push(Number(item.getAttribute('runner-id')))
+      })
+      refreshTeamResults(minRuns, excludedRunners)
+      refreshIndividualResults(minRuns, excludedRunners)
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+
+<body>
+  <main class="container-fluid">
+    <div class="grid" style="grid-template-columns: 25% 75%">
+      <div>
+        <fieldset>
+          <label>
+            <b>Minimalna liczba ukończonych biegów:</b>
+            <select id="min-runs" onchange="refresh()" required>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset id="runners">
+          <legend><b>Widoczni zawodnicy:</b></legend>
+        </fieldset>
+      </div>
+      <div>
+        <details name="team" open>
+          <summary role="button">Klasyfikacja drużynowa</summary>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Miejsce</th>
+                <th scope="col">Drużyna</th>
+                <th scope="col">Zawodnik 1</th>
+                <th scope="col">Zawodnik 2</th>
+                <th scope="col">Zawodnik 3</th>
+                <th scope="col">Zawodnik 4</th>
+                <th scope="col">Zawodnik 5</th>
+                <th scope="col">Suma czasów</th>
+              </tr>
+            </thead>
+            <tbody id="results-team">
+            </tbody>
+          </table>
+        </details>
+        <hr />
+        <details name="individual">
+          <summary role="button">Klasyfikacja indywidualna</summary>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Lp</th>
+                <th scope="col">Zawodnik</th>
+                <th scope="col">Drużyna</th>
+                <th scope="col">Janowiec Wielkopolski</th>
+                <th scope="col">Fabianki</th>
+                <th scope="col">Średni czas</th>
+                <th scope="col">Open</th>
+                <th scope="col">Kat. wiek.</th>
+              </tr>
+            </thead>
+            <tbody id="results-individual">
+            </tbody>
+          </table>
+        </details>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
