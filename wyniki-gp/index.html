@@ -59,7 +59,6 @@
       order by avg_result;
       `
       const contents = window.db.exec(sql);
-      console.log(contents);
       table = document.getElementById('results-individual')
       table.innerHTML = '';
       columns = [
@@ -71,9 +70,11 @@
         "place_open",
         "place_category"
       ]
+      if (contents.length == 0) {
+        return;
+      }
       for (let [index, entry] of contents[0].values.entries()) {
         runner = Object.fromEntries(contents[0].columns.map((k, i) => [k, entry[i]]));
-        console.log(runner);
         const row = document.createElement("tr");
         const place = document.createElement("td")
         place.append(document.createTextNode(index + 1))
@@ -119,6 +120,9 @@
       const contents = window.db.exec(sql);
       table = document.getElementById('results-team')
       table.innerHTML = '';
+      if (contents.length == 0) {
+        return;
+      }
       for (let [index, entry] of contents[0].values.entries()) {
         const row = document.createElement("tr");
         const place = document.createElement("td")
