@@ -4,7 +4,7 @@ categories:
 - Łubianka Grand Prix Cross
 ---
 
-# XXVI Bieg Samorządowy [zapisy wkrótce]
+# XXVI Bieg Samorządowy
 
 * Miejsce: Gminny Park Kultury w Łubiance
 * Start - godz. 10:00
