@@ -70,6 +70,10 @@
         "place_open",
         "place_category"
       ]
+      bold = [
+        "name",
+        "avg_result_str"
+      ]
       if (contents.length == 0) {
         return;
       }
@@ -81,6 +85,9 @@
         row.append(place)
         columns.forEach((item) => {
           const col = document.createElement("td")
+          if (bold.includes(item)) {
+            col.setAttribute("style", "font-weight: bold;")
+          }
           col.append(runner[item] || "")
           row.append(col)
         })
@@ -129,6 +136,7 @@
         place.append(document.createTextNode(index + 1))
         row.append(place)
         const team = document.createElement("td")
+        team.setAttribute("style", "font-weight: bold;")
         team.append(entry[0])
         row.append(team)
         JSON.parse(entry[2]).forEach((p) => {
@@ -137,6 +145,7 @@
           row.append(runner)
         })
         const total = document.createElement("td")
+        total.setAttribute("style", "font-weight: bold;")
         total.append(entry[1])
         row.append(total)
         table.appendChild(row)
@@ -158,66 +167,56 @@
 
 <body>
   <main class="container-fluid">
-    <div class="grid" style="grid-template-columns: 25% 75%">
-      <div>
-        <fieldset>
-          <label>
-            <b>Minimalna liczba ukończonych biegów:</b>
-            <select id="min-runs" onchange="refresh()" required>
-              <option>1</option>
-              <option selected>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </label>
-        </fieldset>
-        <fieldset id="runners" style="display: none;">
-          <legend><b>Widoczni zawodnicy:</b></legend>
-        </fieldset>
-      </div>
-      <div>
-        <details name="team" open>
-          <summary role="button">Klasyfikacja drużynowa</summary>
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">Miejsce</th>
-                <th scope="col">Drużyna</th>
-                <th scope="col">Zawodnik 1</th>
-                <th scope="col">Zawodnik 2</th>
-                <th scope="col">Zawodnik 3</th>
-                <th scope="col">Zawodnik 4</th>
-                <th scope="col">Zawodnik 5</th>
-                <th scope="col">Suma czasów</th>
-              </tr>
-            </thead>
-            <tbody id="results-team">
-            </tbody>
-          </table>
-        </details>
-        <hr />
-        <details name="individual" open>
-          <summary role="button">Klasyfikacja indywidualna</summary>
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">Lp</th>
-                <th scope="col">Zawodnik</th>
-                <th scope="col">Drużyna</th>
-                <th scope="col">Janowiec Wielkopolski</th>
-                <th scope="col">Fabianki</th>
-                <th scope="col">Średni czas</th>
-                <th scope="col">Open</th>
-                <th scope="col">Kat. wiek.</th>
-              </tr>
-            </thead>
-            <tbody id="results-individual">
-            </tbody>
-          </table>
-        </details>
-      </div>
-    </div>
+    <fieldset role="group">
+      <label>
+        Minimalna liczba ukończonych biegów: <b><span id="minRunsValue">2</span></b>
+        <input id="min-runs" style="width: auto" name="minRuns"
+          oninput="document.getElementById('minRunsValue').innerHTML = this.value; refresh()" type="range" step="1"
+          min="1" max="6" value="2">
+      </label>
+    </fieldset>
+    <fieldset id="runners" style="display: none;">
+      <legend><b>Widoczni zawodnicy:</b></legend>
+    </fieldset>
+    <details name="team" open>
+      <summary role="button">Klasyfikacja drużynowa</summary>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Miejsce</th>
+            <th scope="col">Drużyna</th>
+            <th scope="col">Zawodnik 1</th>
+            <th scope="col">Zawodnik 2</th>
+            <th scope="col">Zawodnik 3</th>
+            <th scope="col">Zawodnik 4</th>
+            <th scope="col">Zawodnik 5</th>
+            <th scope="col">Suma czasów</th>
+          </tr>
+        </thead>
+        <tbody id="results-team">
+        </tbody>
+      </table>
+    </details>
+    <hr />
+    <details name="individual" open>
+      <summary role="button">Klasyfikacja indywidualna</summary>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Lp</th>
+            <th scope="col">Zawodnik</th>
+            <th scope="col">Drużyna</th>
+            <th scope="col">Janowiec Wielkopolski</th>
+            <th scope="col">Fabianki</th>
+            <th scope="col">Średni czas</th>
+            <th scope="col">Open</th>
+            <th scope="col">Kat. wiek.</th>
+          </tr>
+        </thead>
+        <tbody id="results-individual">
+        </tbody>
+      </table>
+    </details>
   </main>
   <footer>
     <p>Źródła danych:</p>
