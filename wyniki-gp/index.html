@@ -165,14 +165,14 @@
             <b>Minimalna liczba ukończonych biegów:</b>
             <select id="min-runs" onchange="refresh()" required>
               <option>1</option>
-              <option>2</option>
+              <option selected>2</option>
               <option>3</option>
               <option>4</option>
               <option>5</option>
             </select>
           </label>
         </fieldset>
-        <fieldset id="runners">
+        <fieldset id="runners" style="display: none;">
           <legend><b>Widoczni zawodnicy:</b></legend>
         </fieldset>
       </div>
@@ -197,7 +197,7 @@
           </table>
         </details>
         <hr />
-        <details name="individual">
+        <details name="individual" open>
           <summary role="button">Klasyfikacja indywidualna</summary>
           <table>
             <thead>
@@ -219,6 +219,14 @@
       </div>
     </div>
   </main>
+  <footer>
+    <p>Źródła danych:</p>
+    <ul>
+      <li><a href="https://wyniki.datasport.pl/results5508/indexnew.php"> XXXV Bieg im. Tomasza Hopfera</a></li>
+      <li><a href="https://domtel-sport.pl/wyniki,zawody,6057">II Bieg Fabianki na Dychę</a></li>
+    </ul>
+    <p>W przypadku żądania usunięcie danych ze strony, proszę o kontakt mailowy: szczeles@gmail.com</p>
+  </footer>
 </body>
 
 </html>
