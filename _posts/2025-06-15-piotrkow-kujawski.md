@@ -22,7 +22,7 @@ categories:
     * 50zł – do 30.04.2025
     * 60zł – od 01.05.2025 do 10.06.2025
     * 80 zł – w biurze zawodów 15.06.2025
-* zniżka dla finisherów cyklu - jest kod rabatowy do wpisania, **do sprawdzenia**
+* zniżka dla finisherów cyklu: kod indywidualny uzyskiwany po wysłaniu maila na bieg@bspk.pl
    
 ## Klasyfikacje
 

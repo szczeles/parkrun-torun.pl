@@ -4,7 +4,7 @@ categories:
 - Łubianka Grand Prix Cross
 ---
 
-# XIII Bieg im. Czesława Miłosza [zapisy wkrótce]
+# XIII Bieg im. Czesława Miłosza
 
 * Miejsce: Gminny Park Kultury w Łubiance
 * Start - godz. 10:00
