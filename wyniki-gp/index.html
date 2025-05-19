@@ -4,8 +4,7 @@
 <head>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.13.0/sql-wasm.js'></script>
   <script>
-    //const url = "https://parkrun-torun.pl/wyniki-gp/results.db"
-    const url = "results.db"
+    const url = "results.db?radziejow"
     initSqlJs({
       locateFile: file => `https://sql.js.org/dist/${file}`
     }).then(function (SQL) {
