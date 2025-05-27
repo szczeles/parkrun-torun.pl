@@ -8,8 +8,12 @@ categories:
 
 ## Linki
 * [Garmin](https://connect.garmin.com/modern/event/adc935c9-8564-46e4-90a0-3794356c344b)
-* [Zapisy i lista startowa](https://foxter-sport.pl/xxi-radziejowski-bieg-poludniowy-%25E2%2580%2593-10-km-)
 * [Regulamin](https://foxter-sport.pl/uploads/competition/comp_regulations_799.pdf)
+* [Zapisy, lista startowa, wyniki](https://foxter-sport.pl/xxi-radziejowski-bieg-poludniowy-%25E2%2580%2593-10-km-)
+
+## Zdjęcia
+
+* [album Oli](https://www.facebook.com/media/set?vanity=a.sluniecka.fotografia&set=a.752065030481823)
 
 ## Organizacja
 * start (16:00) i meta na [Stadionie Miejskim w Radziejowie, ul. Sportowa 1](https://maps.app.goo.gl/UYsCXxPj1rRKZ4Bd8)

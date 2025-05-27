@@ -176,9 +176,12 @@
           min="1" max="6" value="2">
       </label>
     </fieldset>
-    <fieldset id="runners" style="display: none;">
-      <legend><b>Widoczni zawodnicy:</b></legend>
-    </fieldset>
+    <details name="runners-exclusion">
+      <summary role="button">Biegacze</summary>
+      <fieldset id="runners">
+        <legend><b>Widoczni zawodnicy:</b></legend>
+      </fieldset>
+    </details>
     <details name="team" open>
       <summary role="button">Klasyfikacja drużynowa</summary>
       <table>
