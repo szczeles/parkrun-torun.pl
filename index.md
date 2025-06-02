@@ -3,7 +3,7 @@ title: "Biegi drużyny parkrun Toruń w 2025"
 permalink: /
 layout: splash
 header:
-  image: /assets/images/fabianki-2025.jpg
+  image: /assets/images/lisewo-2025.jpg
 feature_row:
   - image_path: /assets/images/gp-2024-puchar.jpg
     alt: "grand prix województwa"
