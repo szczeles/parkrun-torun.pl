@@ -37,10 +37,10 @@
       xhr.send();
     });
 
-    function refreshIndividualResults(minRuns, excludedRunners) {
+    function refreshIndividualResults(gender, minRuns, excludedRunners) {
       sql = `
       with base as (
-          select * from results where total_runs >= ${minRuns} and id not in (${excludedRunners.join(',')})
+          select * from results where total_runs >= ${minRuns} and id not in (${excludedRunners.join(',')}) and gender in (${gender})
       ),
       open_rank as (
           select *,
@@ -155,13 +155,16 @@
     }
 
     function refresh() {
+      console.time('refresh');
       minRuns = document.getElementById('min-runs').value
+      gender = document.getElementById('gender').value
       excludedRunners = []
       document.querySelectorAll("input[type='checkbox']:not(:checked)").forEach((item) => {
         excludedRunners.push(Number(item.getAttribute('runner-id')))
       })
       refreshTeamResults(minRuns, excludedRunners)
-      refreshIndividualResults(minRuns, excludedRunners)
+      refreshIndividualResults(gender, minRuns, excludedRunners)
+      console.timeEnd('refresh');
     }
   </script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
@@ -176,6 +179,11 @@
           oninput="document.getElementById('minRunsValue').innerHTML = this.value; refresh()" type="range" step="1"
           min="1" max="6" value="2">
       </label>
+      <select style="width: auto" id='gender' oninput="refresh()">
+          <option selected value="'M', 'K'">Wszyscy</option>
+          <option value="'K'">Kobiety</option>
+          <option value="'M'">Mężczyźni</option>
+      </select>
     </fieldset>
     <details name="runners-exclusion">
       <summary role="button">Biegacze</summary>
