@@ -4,7 +4,7 @@
 <head>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.13.0/sql-wasm.js'></script>
   <script>
-    const url = "results.db?piotrkow"
+    const url = "results.db?golub"
     initSqlJs({
       locateFile: file => `https://sql.js.org/dist/${file}`
     }).then(function (SQL) {
@@ -69,6 +69,7 @@
         "result_radziejow",
         "result_lisewo",
         "result_piotrkow",
+        "result_golub",
         "avg_result_str",
         "place_open",
         "place_category"
@@ -178,7 +179,7 @@
         Minimalna liczba ukończonych biegów: <b><span id="minRunsValue">2</span></b>
         <input id="min-runs" style="width: auto" name="minRuns"
           oninput="document.getElementById('minRunsValue').innerHTML = this.value; refresh()" type="range" step="1"
-          min="1" max="6" value="2">
+          min="2" max="10" value="3">
       </label>
       <select style="width: auto" id='gender' oninput="refresh()">
           <option selected value="'M', 'K'">Wszyscy</option>
@@ -225,6 +226,7 @@
             <th scope="col">Radziejów</th>
             <th scope="col">Lisewo</th>
             <th scope="col">Piotrków</th>
+            <th scope="col">Golub Dobrzyń</th>
             <th scope="col">Średni czas</th>
             <th scope="col">Open</th>
             <th scope="col">Kat. wiek.</th>
