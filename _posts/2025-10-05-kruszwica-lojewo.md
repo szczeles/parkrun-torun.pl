@@ -14,6 +14,12 @@ categories:
 * [Zapisy](https://zapisy.sts-timing.pl/1101/)
 * [Regulamin](https://zapisy.sts-timing.pl/1101/adm/pdf/b0fa3c893d4f18949be04485cc50696f.pdf)
 
+## Zdjęcia
+
+![drużynowe]({{ site.url }}{{ site.baseurl }}/assets/images/{{ page.path | split: "/" | last | split: "." | first }}.jpg)
+
+* [ED Foto](https://www.facebook.com/media/set/?set=a.789691550554192&type=3)
+
 ## Organizacja
 
 * start 10:00 spod [Mysiej Wieży](https://maps.app.goo.gl/PBXvhDhMof2oEEDS8), meta w [Łojewie](https://maps.app.goo.gl/KVKJGYMvJ2vYYDjz5)

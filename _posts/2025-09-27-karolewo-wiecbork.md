@@ -13,6 +13,12 @@ categories:
 * [Lista zgłoszonych i zapisy](https://foxter-sport.pl/xiii-bieg-pamieci-karolewo-wiecbork-2025)
 * [Regulamin](https://foxter-sport.pl/uploads/competition/comp_regulations_893.pdf)
 
+## Zdjęcia
+
+![drużynowe]({{ site.url }}{{ site.baseurl }}/assets/images/{{ page.path | split: "/" | last | split: "." | first }}.jpg)
+
+* [ED Foto](https://www.facebook.com/media/set/?set=a.783402331183114&type=3)
+
 ## Organizacja
 
 * start 10:00 z Karolewa, gdzie dowiezie nas autobus, meta na stadionie
