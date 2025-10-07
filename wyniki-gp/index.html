@@ -88,6 +88,9 @@
         runner = Object.fromEntries(contents[0].columns.map((k, i) => [k, entry[i]]));
         const row = document.createElement("tr");
         const place = document.createElement("td")
+        if (runner["team"] == "PARKRUN TORUŃ") {
+            row.setAttribute("style", "background-color: #a5d9ff;")
+        }
         place.append(document.createTextNode(index + 1))
         row.append(place)
         columns.forEach((item) => {
@@ -96,6 +99,9 @@
             col.setAttribute("style", "font-weight: bold;")
           }
           col.append(runner[item] || "")
+          if ((item == "place_open" && runner["rank_open"] <= 3) || (item == "place_category" && runner["rank_category"] <= 3 && runner["rank_category"] != null)) {
+            col.textContent += "🏆"
+          }
           row.append(col)
         })
         table.appendChild(row)
@@ -177,6 +183,9 @@
   :root {
       --pico-spacing: 0.5rem;
   }
+  td {
+      background-color: unset;
+  }
   </style>
 </head>
 
@@ -229,12 +238,12 @@
             <th scope="col">Lp</th>
             <th scope="col">Zawodnik</th>
             <th scope="col">Drużyna</th>
-            <th scope="col">Janowiec Wielkopolski</th>
+            <th scope="col">Janowiec</th>
             <th scope="col">Fabianki</th>
             <th scope="col">Radziejów</th>
             <th scope="col">Lisewo</th>
             <th scope="col">Piotrków</th>
-            <th scope="col">Golub Dobrzyń</th>
+            <th scope="col">Golub</th>
             <th scope="col">Rypin</th>
             <th scope="col">Więcbork</th>
             <th scope="col">Kruszwica</th>
