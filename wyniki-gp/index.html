@@ -98,6 +98,9 @@
           if (bold.includes(item)) {
             col.setAttribute("style", "font-weight: bold;")
           }
+          if (item.startsWith("result") && !runner["best_runs"].includes(item.substr(7))) {
+            col.setAttribute("style", "text-decoration: line-through;")
+          }
           col.append(runner[item] || "")
           if ((item == "place_open" && runner["rank_open"] <= 3) || (item == "place_category" && runner["rank_category"] <= 3 && runner["rank_category"] != null)) {
             col.textContent += "🏆"
