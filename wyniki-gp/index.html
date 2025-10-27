@@ -4,7 +4,7 @@
 <head>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.13.0/sql-wasm.js'></script>
   <script>
-    const url = "results.db?kruszwica"
+    const url = "results.db?gniewkowo2"
     initSqlJs({
       locateFile: file => `https://sql.js.org/dist/${file}`
     }).then(function (SQL) {
@@ -44,13 +44,13 @@
       ),
       open_rank as (
           select *,
-              row_number() over (partition by gender order by avg_result) as rank_open
+              dense_rank() over (partition by gender order by avg_result) as rank_open
           from base
       ),
       with_ranks as (
         select *, null as rank_category from open_rank where rank_open <= 3
         union all
-        select *, row_number() over (partition by category order by avg_result) from open_rank where rank_open > 3
+        select *, dense_rank() over (partition by category order by avg_result) from open_rank where rank_open > 3
       )
       select *,
         gender || ": " || rank_open as place_open,
@@ -73,6 +73,7 @@
         "result_rypin",
         "result_wiecbork",
         "result_kruszwica",
+	"result_gniewkowo",
         "avg_result_str",
         "place_open",
         "place_category"
@@ -89,7 +90,7 @@
         const row = document.createElement("tr");
         const place = document.createElement("td")
         if (runner["team"] == "PARKRUN TORUŃ") {
-            row.setAttribute("style", "background-color: #a5d9ff;")
+            row.setAttribute("style", "background-color: var(--pico-primary-background); color: #c2c7d0")
         }
         place.append(document.createTextNode(index + 1))
         row.append(place)
@@ -188,6 +189,7 @@
   }
   td {
       background-color: unset;
+      color: unset;
   }
   </style>
 </head>
@@ -196,10 +198,10 @@
   <main class="container-fluid">
     <fieldset role="group">
       <label>
-        Minimalna liczba ukończonych biegów: <b><span id="minRunsValue">5</span></b>
+        Minimalna liczba ukończonych biegów: <b><span id="minRunsValue">6</span></b>
         <input id="min-runs" style="width: auto" name="minRuns"
           oninput="document.getElementById('minRunsValue').innerHTML = this.value; refresh()" type="range" step="1"
-          min="2" max="10" value="5">
+          min="2" max="10" value="6">
       </label>
       <select style="width: auto" id='gender' oninput="refresh()">
           <option selected value="'M', 'K'">Wszyscy</option>
@@ -250,6 +252,7 @@
             <th scope="col">Rypin</th>
             <th scope="col">Więcbork</th>
             <th scope="col">Kruszwica</th>
+            <th scope="col">Gniewkowo</th>
             <th scope="col">Średni czas</th>
             <th scope="col">Open</th>
             <th scope="col">Kat. wiek.</th>
