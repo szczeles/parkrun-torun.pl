@@ -2,7 +2,7 @@
 layout: single
 title: Golub-Dobrzyń
 categories:
-- Grand Prix Województwa
+- Grand Prix Województwa 2025
 ---
 
 # V Bieg o Wschodzie Słońca

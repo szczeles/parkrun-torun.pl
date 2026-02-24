@@ -1,7 +1,7 @@
 ---
 title: Rojewo-Gniewkowo
 categories:
-- Grand Prix Województwa
+- Grand Prix Województwa 2025
 ---
 
 # XXXI Bieg im. Rodziny Milewskich
@@ -12,6 +12,10 @@ categories:
 * [Lista zgłoszonych](https://zapisy.sts-timing.pl/1092/lista.php)
 * [Zapisy](https://zapisy.sts-timing.pl/1092/)
 * [Regulamin](https://zapisy.sts-timing.pl/1092/adm/pdf/0f3a1a11c52a1b223547cc1e147ebf1d.pdf)
+
+## Zdjęcia
+
+![drużynowe]({{ site.url }}{{ site.baseurl }}/assets/images/{{ page.path | split: "/" | last | split: "." | first }}.jpg)
 
 ## Organizacja
 

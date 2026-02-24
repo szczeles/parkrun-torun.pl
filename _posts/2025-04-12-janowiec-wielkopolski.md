@@ -1,7 +1,7 @@
 ---
 title: Janowiec Wielkopolski
 categories:
-- Grand Prix Województwa
+- Grand Prix Województwa 2025
 ---
 
 # XXXV Bieg im. Tomasza Hopfera

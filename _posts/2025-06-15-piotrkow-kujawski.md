@@ -1,7 +1,7 @@
 ---
 title: Piotrków Kujawski
 categories:
-- Grand Prix Województwa
+- Grand Prix Województwa 2025
 ---
 
 # X Piotrkowski Bieg Bankowy

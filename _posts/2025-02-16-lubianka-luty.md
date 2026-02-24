@@ -1,7 +1,7 @@
 ---
 title: GP Łubianki, luty
 categories:
-- Łubianka Grand Prix Cross
+- Łubianka Grand Prix Cross 2024/2025
 ---
 
 # XIV Bieg im. ks. bp Adolfa Szelążka

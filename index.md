@@ -1,23 +1,24 @@
 ---
-title: "Biegi drużyny parkrun Toruń w 2025"
+title: "Biegi drużyny parkrun Toruń w 2026"
 permalink: /
 layout: splash
 header:
-  image: /assets/images/lisewo-2025.jpg
+  image: /assets/images/hero.jpg
+  caption: "Fotka dzięki uprzejmości [**ED Foto**](https://buycoffee.to/edfoto)"
 feature_row:
-  - image_path: /assets/images/gp-2024-puchar.jpg
+  - image_path: /assets/images/gp-2025-puchar.jpg
     alt: "grand prix województwa"
     title: "Grand Prix Województwa"
     url: /grand-prix-wojewodztwa
     btn_label: "Lista biegów"
     btn_class: "btn--primary"
-  - image_path: /assets/images/lubianka.jpg
+  - image_path: /assets/images/lubianka-2026-hero.jpg
     alt: "gp łubianki"
     title: "Łubianka Grand Prix Cross"
     url: /lubianka
     btn_label: "Lista biegów"
     btn_class: "btn--primary"
-  - image_path: /assets/images/gpt.jpg
+  - image_path: /assets/images/gp-torunia-2025.jpg
     alt: "gp torunia"
     title: "Grand Prix Torunia"
     url: /grand-prix-torunia

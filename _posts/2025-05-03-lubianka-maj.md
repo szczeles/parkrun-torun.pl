@@ -1,7 +1,7 @@
 ---
 title: GP Łubianki, maj
 categories:
-- Łubianka Grand Prix Cross
+- Łubianka Grand Prix Cross 2024/2025
 ---
 
 # XXVI Bieg Samorządowy

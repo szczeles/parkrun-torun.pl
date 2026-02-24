@@ -1,7 +1,7 @@
 ---
 title: Karolewo-Więcbork
 categories:
-- Grand Prix Województwa
+- Grand Prix Województwa 2025
 ---
 
 # XIV Bieg Pamięci Karolewo-Więcbork

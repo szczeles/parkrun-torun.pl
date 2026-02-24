@@ -1,7 +1,7 @@
 ---
 title: Radziejów
 categories:
-- Grand Prix Województwa
+- Grand Prix Województwa 2025
 ---
 
 # 21. Radziejowski Bieg Południowy

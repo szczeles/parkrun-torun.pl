@@ -1,7 +1,7 @@
 ---
 title: GP Łubianki, marzec
 categories:
-- Łubianka Grand Prix Cross
+- Łubianka Grand Prix Cross 2024/2025
 ---
 
 # IV Bieg Pamięci Żołnierzy Wyklętych

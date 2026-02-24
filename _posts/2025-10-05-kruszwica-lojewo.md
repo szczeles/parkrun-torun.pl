@@ -1,7 +1,7 @@
 ---
 title: Kruszwica-Łojewo
 categories:
-- Grand Prix Województwa
+- Grand Prix Województwa 2025
 ---
 
 # Bieg Dwóch Jezior

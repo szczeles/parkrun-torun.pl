@@ -1,7 +1,7 @@
 ---
 title: GP Łubianki, czerwiec
 categories:
-- Łubianka Grand Prix Cross
+- Łubianka Grand Prix Cross 2024/2025
 ---
 
 # XIII Bieg im. Czesława Miłosza
