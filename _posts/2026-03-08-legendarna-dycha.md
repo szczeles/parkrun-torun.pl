@@ -18,7 +18,7 @@ categories:
 * organizator: Stowarzyszenie RUN TO RUN
 * nawierzchnia: asfalt
 * start 10:00 z [Rynku Staromiejskiego](https://maps.app.goo.gl/foBoG16AaZMCh23k7)
-* biuro zawodów w [Dworze Artusa](https://maps.app.goo.gl/nZqyVmyLuD3tJA7QA), czynny w sobotę 14:00-18:00 i w niedzielę 7:00-9:00
+* biuro zawodów w [Dworze Artusa](https://maps.app.goo.gl/nZqyVmyLuD3tJA7QA), czynne w sobotę 14:00-18:00 i w niedzielę 7:00-9:00
 
 ![trasa](https://run-torun.pl/wp-content/uploads/2026/02/Mapa-statyczna-trasy-Trylogia-Torunskich-Legenda-2026-I-edycja-10-km-2048x1859.png)
 
