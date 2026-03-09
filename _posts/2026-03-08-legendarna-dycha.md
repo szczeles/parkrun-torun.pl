@@ -6,6 +6,17 @@ categories:
 
 # Legendarna Dycha
 
+## Zdjęcia
+
+![drużynowe](/assets/photos/{{ page.path | split: "/" | last | split: "." | first }}.jpg)
+
+* [Karol Olszewski/sports.ipflow.pl](https://www.facebook.com/media/set?vanity=ipflow.photo&set=a.1219068513712380)
+* [ED Foto](https://www.facebook.com/media/set/?vanity=100085400623360&set=a.915328444657168)
+* [Lepszy Toruń lepsza Polska - Damian Fajfer](https://lepszytorunlepszapolska.pl/trylogia-torunskich-legend-biegi/)
+* fot. Andrzej Olszanowski: [1](https://www.facebook.com/10KmRunTorun/posts/pfbid02X5ht8TTLahmho17qa4XhZ23Ki525n3EeE9BMWMuwSYV2AALESmRkCMpfqpLU1jhEl), [2](https://www.facebook.com/10KmRunTorun/posts/pfbid05ikmAiBwxqwBkYcxU1jPd6s9zvN5pbk4DUcxZQKYckb7MMmVbhERHmYENK3gnS83l)
+* [fot. Piotr Jagielowicz Fotografia Sportowa](https://www.facebook.com/10KmRunTorun/posts/pfbid02gJchftWMtot36dpnNLpEy9T4kT4Zq9sXa2eJM4oyHefZXJoMvDtZtSFemBb1dUxsl)
+
+
 ## Linki 
 
 * [FB](https://www.facebook.com/events/1209804227265562/?active_tab=discussion)
