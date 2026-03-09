@@ -54,7 +54,7 @@
       )
       select *,
         gender || ": " || rank_open as place_open,
-        category || ": " || rank_category as place_category
+        case when category != "" then category || ": " || rank_category end as place_category
       from with_ranks
       order by avg_result;
       `
@@ -97,7 +97,7 @@
             col.setAttribute("style", "text-decoration: line-through;")
           }
           col.append(runner[item] || "")
-          if ((item == "place_open" && runner["rank_open"] <= 3) || (item == "place_category" && runner["rank_category"] <= 3 && runner["rank_category"] != null)) {
+          if ((item == "place_open" && runner["rank_open"] <= 3) || (item == "place_category" && runner["rank_category"] <= 3 && runner["rank_category"] != null && runner["place_category"] != null)) {
             col.textContent += "🏆"
           }
           row.append(col)
@@ -203,7 +203,7 @@
           <option value="'M'">Mężczyźni</option>
       </select>
     </fieldset>
-    <details name="runners-exclusion">
+    <details name="runners-exclusion" style='display: none'>
       <summary role="button">Biegacze</summary>
       <fieldset id="runners">
         <legend><b>Widoczni zawodnicy:</b></legend>
