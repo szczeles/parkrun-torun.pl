@@ -9,6 +9,7 @@ categories:
 ## Linki 
 
 * [Strona wójta na FB](https://www.facebook.com/profile.php?id=61558675085879)
+* [Wydarzenie FB](https://www.facebook.com/events/1489074199262102)
 * [Lista zgłoszonych](https://zapisy.domtel-sport.pl/fabianki-na-dyche-c15864)
 * [Zapisy](https://zapisy.domtel-sport.pl/fabianki-na-dyche-v15864)
 * [Regulamin](https://dostartu.pl/statute_files/15864_pl.pdf)
