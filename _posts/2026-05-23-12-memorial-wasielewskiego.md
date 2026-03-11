@@ -18,7 +18,7 @@ categories:
 * organizator: Gmina Lubraniec / Gmina Brześć Kujawski
 * nawierzchnia: asfalt
 * start: 10:00, Lubraniec, meta na stadionie w Brześciu Kujawskim. Organizator zawiezie nas autobusami na start.
-* biuro zawodów czynne 7:00 - 9:10 na [Stadionie w Brześciu](https://maps.app.goo.gl/6w8TKLjsRf3WN5Jb7)
+* biuro zawodów czynne 7:00 - 9:10 na [Stadionie w Brześciu](https://maps.app.goo.gl/6w8TKLjsRf3WN5Jb7), dojazd: ok 50 minut (68km A1)
 
 ## Klasyfikacje
 
@@ -32,3 +32,4 @@ categories:
 
 * do 19.05: 70 zł
 * w biurze zawodów: 80 zł
+* zniżka dla finiszerów GPW2025 (osób, które ukończyły min. 6 biegów w 2025): `20#GrandPrix`
