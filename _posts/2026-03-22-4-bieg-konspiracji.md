@@ -10,6 +10,7 @@ categories:
 * [Regulamin](https://www.biegzawackiej.pl/#regulamin)
 * [Lista startowa](https://www.biegzawackiej.pl/lista-startowa.php)
 * [Zapisy](https://www.biegzawackiej.pl/zapisy.php)
+* [Trasa](https://connect.garmin.com/app/course/430132971)
 
 # Organizacja
 
