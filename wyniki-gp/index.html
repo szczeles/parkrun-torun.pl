@@ -4,7 +4,7 @@
 <head>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.13.0/sql-wasm.js'></script>
   <script>
-    const url = "results.db?torun2"
+    const url = "results.db?grudziadz"
     initSqlJs({
       locateFile: file => `https://sql.js.org/dist/${file}`
     }).then(function (SQL) {
@@ -65,6 +65,7 @@
         "name",
         "team",
         "result_torun",
+	"result_grudziadz",
 	/*
 	"result_gniewkowo",
 	*/
@@ -238,6 +239,7 @@
             <th scope="col">Zawodnik</th>
             <th scope="col">Drużyna</th>
             <th scope="col">Toruń</th>
+            <th scope="col">Grudziądz</th>
 	    <!--
             <th scope="col">Gniewkowo</th>
 	    -->
@@ -255,6 +257,7 @@
     <p>Źródła danych:</p>
     <ul>
       <li><a href="https://live.sts-timing.pl/TrylogiaTorunskichLegend/I/index.php?dystans=2">Legendarna Dycha</a></li>
+      <li><a href="https://wyniki.domtel-sport.pl/zawody/5-bronek-run-forest-edition/">5. Bronek Run Forest Edition</a></li>
     </ul>
     <p>W przypadku żądania usunięcia danych ze strony, proszę o kontakt mailowy: szczeles@gmail.com</p>
   </footer>
