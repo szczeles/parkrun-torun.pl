@@ -6,6 +6,12 @@ categories:
 
 # XII Memoriał im. Czesława Wasielewskiego
 
+## Zdjęcia
+
+![drużynowe](/assets/photos/{{ page.path | split: "/" | last | split: "." | first }}.jpg)
+
+* [ED Foto](https://www.facebook.com/media/set/?set=a.979350714921607&type=3)
+
 ## Linki 
 
 * [FB](https://www.facebook.com/memorialwasielewskiego)

@@ -6,6 +6,13 @@ categories:
 
 # 5 Bronek Run - Forest Edition
 
+## Zdjęcia
+
+![drużynowe](/assets/photos/{{ page.path | split: "/" | last | split: "." | first }}.jpg)
+
+* ED Foto: [1](https://www.facebook.com/media/set/?set=a.948971241292888&type=3), [2](https://www.facebook.com/media/set/?set=a.949758054547540&type=3)
+
+
 ## Linki 
 
 * [FB](https://www.facebook.com/profile.php?id=61555648865045)

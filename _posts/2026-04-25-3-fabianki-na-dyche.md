@@ -6,6 +6,12 @@ categories:
 
 # III Bieg Fabianki na Dychę
 
+## Zdjęcia
+
+![drużynowe](/assets/photos/{{ page.path | split: "/" | last | split: "." | first }}.jpg)
+
+* [ED Foto](https://www.facebook.com/media/set/?set=a.954146687442010&type=3)
+
 ## Linki 
 
 * [Strona wójta na FB](https://www.facebook.com/profile.php?id=61558675085879)

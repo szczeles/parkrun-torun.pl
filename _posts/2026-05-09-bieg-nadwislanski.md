@@ -6,6 +6,12 @@ categories:
 
 # Bieg Nadwiślański
 
+## Zdjęcia
+
+![drużynowe](/assets/photos/{{ page.path | split: "/" | last | split: "." | first }}.jpg)
+
+* ED Foto: [1](https://www.facebook.com/media/set/?set=a.966301089559903&type=3), [2](https://www.facebook.com/media/set/?set=a.966710489518963&type=3)
+
 ## Linki 
 
 * [FB](https://www.facebook.com/p/Gmina-Waganiec-100069341897086/?locale=pl_PL)
