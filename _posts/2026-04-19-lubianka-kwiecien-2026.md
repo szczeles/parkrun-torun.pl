@@ -6,4 +6,6 @@ categories:
 
 Miejsce: **Bierzgłowo**
 
-* Start - godz. 10:00
+## Zdjęcia
+
+* [organizatora](https://www.facebook.com/lubiankagrandprixcross/posts/pfbid02vMUF51jUYc4EHcpkcUXqunS52EyB7pUibf64kQR4BQaWptW1r2Fpcruw8RfWjTAsl)
