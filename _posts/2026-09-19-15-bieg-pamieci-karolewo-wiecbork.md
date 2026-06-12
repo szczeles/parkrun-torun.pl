@@ -32,4 +32,4 @@ categories:
 * do 31.08 - 50zł
 * do 16.09 - 60zł
 * w dniu zawodów - 70zł
-* zniżka dla finisherów 2024 - w trakcie weryfikacji
+* zniżka dla finisherów 2025 - przyjdą indywidualne kodu na e-mail
