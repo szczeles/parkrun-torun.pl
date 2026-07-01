@@ -6,6 +6,13 @@ categories:
 
 # XXI Dziesiątka Unisławska
 
+## Zdjęcia
+
+![drużynowe](/assets/photos/{{ page.path | split: "/" | last | split: "." | first }}.jpg)
+
+* [ED Foto](https://www.facebook.com/media/set/?vanity=100085400623360&set=a.1012259618297383)
+* Organizator: [1](https://photos.app.goo.gl/y39CSr1nrcq8Ydr17), [2](https://photos.app.goo.gl/ZDCCNp8ekx8ieKhi6)
+
 ## Linki 
 
 * [Lista zgłoszonych](https://zapisy.sts-timing.pl/1147/lista.php)
