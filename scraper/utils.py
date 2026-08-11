@@ -67,7 +67,8 @@ Marchlik-Fisz	Joanna
 Wiśniewska	Daniela
 Krupska	Karolina
 '''
-team_members = [n.split('\t')[1] + ' ' + n.split('\t')[0] for n in members.strip().split('\n')] + \
+team_members = members.strip().split('\n')
+[n.split('\t')[1] + ' ' + n.split('\t')[0] for n in members.strip().split('\n')] + \
  [n.split('\t')[0] + ' ' + n.split('\t')[1] for n in members.strip().split('\n')]
 
 def get_team_member(name):
@@ -77,9 +78,11 @@ def get_team_member(name):
         name = 'Magdalena Jabłońska'
     if name == 'Daniela Maria WIŚNIEWSKA':
         name = 'Daniela Wiśniewska'
-    for member in team_members:
-        if member.lower() == name.lower():
-            return member
+    for n in team_members:
+        f_l = n.split('\t')[1] + ' ' + n.split('\t')[0]
+        l_f = n.split('\t')[0] + ' ' + n.split('\t')[1]
+        if f_l.lower() == name.lower() or l_f.lower() == name.lower():
+            return f_l
 
 def gender_icon(g):
     return '🏃🏻' if g == 'M' else '🏃‍♀️'
