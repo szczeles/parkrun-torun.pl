@@ -67,7 +67,8 @@ Marchlik-Fisz	Joanna
 Wiśniewska	Daniela
 Krupska	Karolina
 '''
-team_members = [n.split('\t')[1] + ' ' + n.split('\t')[0] for n in members.strip().split('\n')]
+team_members = [n.split('\t')[1] + ' ' + n.split('\t')[0] for n in members.strip().split('\n')] + \
+ [n.split('\t')[0] + ' ' + n.split('\t')[1] for n in members.strip().split('\n')]
 
 def get_team_member(name):
     if name == 'Edyta Anna FRĄK':
@@ -91,4 +92,13 @@ def get_award(position):
         return 'OPEN 🥈'
     if position == 3:
         return 'OPEN 🥉'
+    return ''
+
+def get_cat_award(position):
+    if position == 1:
+        return 'kat. 🥇'
+    if position == 2:
+        return 'kat. 🥈'
+    if position == 3:
+        return 'kat. 🥉'
     return ''
