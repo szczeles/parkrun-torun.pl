@@ -4,7 +4,7 @@ categories:
 - Grand Prix Województwa
 ---
 
-# XXXII Bieg im. Rodziny Milewskich [zapisy wkrótce]
+# XXXII Bieg im. Rodziny Milewskich
 
 ## Linki 
 

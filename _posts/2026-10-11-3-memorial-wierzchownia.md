@@ -4,7 +4,7 @@ categories:
 - Grand Prix Województwa
 ---
 
-# III Memoriał Stanisławy Walasiewiczówny [zapisy wkrótce]
+# III Memoriał Stanisławy Walasiewiczówny
 
 ## Linki 
 
@@ -21,7 +21,7 @@ categories:
 * biuro zawodów otwarte 10:00-11:45
 * dojazd z Torunia to około 1.5h (80km)
 
-![https://scontent-waw2-1.xx.fbcdn.net/v/t39.30808-6/556148364_122142632462820723_8861727772438397095_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx921x997&ctp=s921x997&_nc_cat=104&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=JYe-YviJ4y4Q7kNvwF8oR-M&_nc_oc=Adp_kKbxu5XR3HrnJZB4OimdzPg8MiUY-QyivS9iV9AOVk5F8LFI4REJzwleG1YrB5Q&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&_nc_gid=h3dF8G8aeVAaxnRgTflRuQ&_nc_ss=7b2a8&oh=00_AQF2PvmgIlCWJgzB54R_yXuRK781l95koyeQuXKXYexW0A&oe=6A95FA02](Trasa z 2025)
+![trasa z 2025 (2 kółka)]({{ site.url }}{{ site.baseurl }}/assets/images/wierzchownia-trasa.jpg)
 
 ## Klasyfikacje
 
