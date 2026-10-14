@@ -6,6 +6,12 @@ categories:
 
 # XV Bieg Pamięci Karolewo-Więcbork
 
+## Zdjęcia
+
+![drużynowe](/assets/photos/{{ page.path | split: "/" | last | split: "." | first }}.jpg)
+
+* [ED Foto](https://www.facebook.com/media/set/?set=a.1085848957605115&type=3)
+
 ## Linki
 
 * [Strona FB Gminy](https://www.facebook.com/profile.php?id=100064855503689)

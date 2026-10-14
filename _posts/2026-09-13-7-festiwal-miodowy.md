@@ -7,6 +7,12 @@ categories:
 # VII Edycja Miodowego Festiwalu Biegowego
 
 
+## Zdjęcia
+
+![drużynowe](/assets/photos/{{ page.path | split: "/" | last | split: "." | first }}.jpg)
+
+* Organizator: [1](https://www.facebook.com/bosir2/posts/pfbid0b2qrej7eoKFPk22Ew2ipq7DR1eknB98XeTyceRoR9YcCghwfEtAzWQsgR12Am8Vjl), [2](https://www.facebook.com/bosir2/posts/pfbid0YrVEBUXWWvVZW5rWY2DrF4vVB63MrbvXxg2ZqF2fVW1uWuoHCVeUUjWte9KupETPl), [3](https://www.facebook.com/bosir2/posts/pfbid02yLYbKYSpg5qMQ9HhHHnSdtH1zNhmURkFLA8cQoedcr32kM1QtwZfNh84CetBkijxl)
+
 ## Linki 
 
 * [FB](https://www.facebook.com/bosir2)

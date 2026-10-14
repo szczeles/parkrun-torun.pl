@@ -6,6 +6,14 @@ categories:
 
 # III Memoriał Stanisławy Walasiewiczówny
 
+
+## Zdjęcia
+
+![drużynowe](/assets/photos/{{ page.path | split: "/" | last | split: "." | first }}.jpg)
+
+* [ED Foto](https://www.facebook.com/media/set/?set=a.1107599838763360&type=3)
+* [Wojtek Łupkiewicz](https://www.facebook.com/groups/3738473876382671/posts/4596164640613586/)
+
 ## Linki 
 
 * [FB](https://www.facebook.com/profile.php?id=61574621707961)
