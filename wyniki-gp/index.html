@@ -4,7 +4,7 @@
 <head>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.13.0/sql-wasm.js'></script>
   <script>
-    const url = "results.db?unislaw2"
+    const url = "results.db?wierzchownia"
     initSqlJs({
       locateFile: file => `https://sql.js.org/dist/${file}`
     }).then(function (SQL) {
@@ -44,19 +44,19 @@
       ),
       open_rank as (
           select *,
-              dense_rank() over (partition by gender order by avg_result) as rank_open
+              dense_rank() over (partition by gender order by avg_result, name) as rank_open
           from base
       ),
       with_ranks as (
         select *, null as rank_category from open_rank where rank_open <= 3
         union all
-        select *, dense_rank() over (partition by category order by avg_result) from open_rank where rank_open > 3
+        select *, dense_rank() over (partition by category order by avg_result, name) from open_rank where rank_open > 3
       )
       select *,
         gender || ": " || rank_open as place_open,
         case when category != "" then category || ": " || rank_category end as place_category
       from with_ranks
-      order by avg_result;
+      order by avg_result, name;
       `
       const contents = window.db.exec(sql);
       table = document.getElementById('results-individual')
@@ -70,6 +70,9 @@
 	"result_waganiec",
 	"result_brzesc",
 	"result_unislaw",
+	"result_barcin",
+	"result_wiecbork",
+	"result_wierzchownia",
 	/*
 	"result_gniewkowo",
 	*/
@@ -121,11 +124,11 @@
           having sum_m >=2 and sum_k >=2 and sum_m + sum_k >=5
       ),
       matching_runners as (
-          select base.*, row_number() over (partition by team, gender order by avg_result) as team_scoring from base
+          select base.*, row_number() over (partition by team, gender order by avg_result, name) as team_scoring from base
           join matching_teams using (team)
       ),
       fifth_time as (
-          select *, row_number() over (partition by team order by avg_result) as fifth_time from matching_runners
+          select *, row_number() over (partition by team order by avg_result, name) as fifth_time from matching_runners
           where team_scoring = 3
       ),
       team_scores as (
@@ -197,10 +200,10 @@
   <main class="container-fluid">
     <fieldset role="group">
       <label>
-        Minimalna liczba ukończonych biegów: <b><span id="minRunsValue">2</span></b>
+        Minimalna liczba ukończonych biegów: <b><span id="minRunsValue">5</span></b>
         <input id="min-runs" style="width: auto" name="minRuns"
           oninput="document.getElementById('minRunsValue').innerHTML = this.value; refresh()" type="range" step="1"
-          min="1" max="10" value="2">
+          min="1" max="10" value="5">
       </label>
       <select style="width: auto" id='gender' oninput="refresh()">
           <option selected value="'M', 'K'">Wszyscy</option>
@@ -248,6 +251,9 @@
             <th scope="col">Waganiec</th>
             <th scope="col">Brześć</th>
             <th scope="col">Unisław</th>
+            <th scope="col">Barcin</th>
+            <th scope="col">Więcbork</th>
+            <th scope="col">Wierzchownia</th>
 	    <!--
             <th scope="col">Gniewkowo</th>
 	    -->
@@ -271,6 +277,9 @@
       <li><a href="https://live.sts-timing.pl/waganiec2026/">Bieg Nadwiślański, Waganiec</a></li>
       <li><a href="https://foxter-sport.pl/xii-memorial-im.-czeslawa-wasielewskiego-2026">XII Memoriał im. Czesława Wasielewskiego, Brześć Kujawski</a></li>
       <li><a href="https://live.sts-timing.pl/unislaw2026/">XXI Dziesiątka Unisławka</a></li>
+      <li><a href="https://www.maratonczykpomiarczasu.pl/sites/default/files/VII%20Miodowy%20Festiwal%20Biegowy%20-%20wyniki%2010km.pdf">VII Miodowy Festiwal Biegowy, Barcin</a></li>
+      <li><a href="https://v1.foxter-sport.pl/xv-bieg-pamieci-karolewo-wiecbork-2026">XV Bieg Pamięci Karolewo Więcbork</a></li>
+      <li><a href="https://www.chiptiming.pl/pl/zawody_szczegoly/III-Memorial-Stanislawy-Walasiewiczowny">III Memoriał Stanisławy Walasiewiczówny. Wierzchownia</a></li>
     </ul>
     <p>W przypadku żądania usunięcia danych ze strony, proszę o kontakt mailowy: szczeles@gmail.com</p>
   </footer>
