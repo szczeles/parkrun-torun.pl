@@ -26,7 +26,6 @@ Kalinowski	Arkadiusz
 Koperski	Sebastian
 Kozicki	Roman
 Kudła	Agnieszka
-Lis	Alicja
 Lubiszewski	Robert
 Mączka	Zbigniew
 Mechliński	Bartłomiej
@@ -61,11 +60,8 @@ Wysocki	Dariusz
 Ziółkowski	Grzegorz
 Żyłkowska	Krystyna
 Mączka	Małgorzata
-Krajnik	Magdalena
 Klabun	Wojciech
 Marchlik-Fisz	Joanna
-Wiśniewska	Daniela
-Krupska	Karolina
 '''
 team_members = members.strip().split('\n')
 [n.split('\t')[1] + ' ' + n.split('\t')[0] for n in members.strip().split('\n')] + \
