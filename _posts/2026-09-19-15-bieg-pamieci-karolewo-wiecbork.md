@@ -6,6 +6,37 @@ categories:
 
 # XV Bieg Pamięci Karolewo-Więcbork
 
+W sobotę ścigaliśmy na Biegu Pamięci Karolewo-Więcbork ze świetnymi wynikami - Michał, Edyta, Gosia i Ola stanęli wysoko na podium 🏆, Przemek, Sebastian i kapitan wracają z nowymi życiówkami 🔥, a w losowaniu zebraliśmy połowę wszystkich nagród 🎁 Po 8. biegu cyklu utrzymujemy stabilnie 3. 🥉 miejsce w klasyfikacji drużyn naszego województwa. 
+
+🇵🇱 XV Bieg Pamięci Karolewo-Więcbork
+* Bartłomiej Mechliński 🏃🏻 11/146 ⏱️37:19
+* Michał Konopka 🏃🏻 14/146 ⏱️37:55 🥇 w kategorii
+* Przemysław Wojciechowski 🏃🏻 16/146 ⏱️38:57 🔥 PB!
+* Mariusz Strzelecki 🏃🏻 21/146 ⏱️39:17 🔥 PB!
+* Sylwester Wawrzynowicz 🏃🏻 23/146 ⏱️39:26
+* Aleksander Deperas 🏃🏻 25/146 ⏱️39:51
+* Michał Gołębiewski 🏃🏻 34/146 ⏱️41:31
+* Tomasz Słuniecki 🏃🏻 36/146 ⏱️42:29
+* Edyta Frąk 🏃‍♀️ 37/146 ⏱️42:35 🥉 w kategorii
+* Karol Miedzak 🏃🏻 41/146 ⏱️43:23
+* Małgorzata Pazderska 🏃‍♀️ 43/146 ⏱️43:43 🥇 w kategorii
+* Dariusz Wysocki 🏃🏻 44/146 ⏱️44:18
+* Jakub Wiśniewski 🏃🏻 48/146 ⏱️45:01
+* Dawid Miedzak 🏃🏻 51/146 ⏱️45:35
+* Roman Kozicki 🏃🏻 56/146 ⏱️46:48
+* Michał Dudkowiak 🏃🏻 58/146 ⏱️46:58
+* Krzysztof Godlewski 🏃🏻 67/146 ⏱️48:15
+* Sebastian Koperski 🏃🏻 68/146 ⏱️48:18 🔥 PB!
+* Jarosław Jaworski 🏃🏻 76/146 ⏱️49:24
+* Aleksandra Słuniecka 🏃‍♀️ 80/146 ⏱️50:07 🥇 w kategorii
+* Elżbieta Stawarska 🏃‍♀️ 89/146 ⏱️51:05
+* Dariusz Janiszewski 🏃🏻 90/146 ⏱️51:48
+* Katarzyna Janeczko 🏃‍♀️ 91/146 ⏱️51:54
+* Agnieszka Smoleń 🏃‍♀️ 121/146 ⏱️1:00:33
+* Agnieszka Syrocka 🏃‍♀️ 126/146 ⏱️1:03:48
+* Joanna Marchlik-Fisz 🏃‍♀️ 127/146 ⏱️1:04:04
+* Marcin Pietrzak 🏃🏻 128/146 ⏱️1:04:08
+
 ## Zdjęcia
 
 ![drużynowe](/assets/photos/{{ page.path | split: "/" | last | split: "." | first }}.jpg)
