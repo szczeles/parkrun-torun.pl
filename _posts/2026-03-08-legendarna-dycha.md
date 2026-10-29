@@ -6,6 +6,16 @@ categories:
 
 # Legendarna Dycha
 
+W tym roku cykl GP wystartował w naszym mieście - od organizatorów wiemy, że to ukłon w stronę najliczniejszej grupy biegaczy zwiedzających województwo "na biegowo" co roku, czyli... nas! Nie zawiedliśmy, wystawiając aż 39-osobową 💙 ekipę na 10km, bijąc na głowę wszystkie nasze frekwencyjne rekordy!
+
+Doskonała pogoda, znajomość terenu i świetne przygotowanie po zimie zaowocowały w wielu życiówkach u Karola, Dawida, Jarka, Ani H., Mateusza, Sebastianap, Sylwka, a i kapitanowi się udało urwać 5 sekund 😉 Brawo dla wszystkich!💪
+A na podium znów zawitał niebieski kolor:
+
+* Sylwia Rok pokazała się na III miejscu 🥉podium OPEN
+* Edyta Frąk stanęła na szczycie w kategorii 🥇oraz okazała się Najszybszą Torunianką! 🏅
+* Małgorzata Pazderska stanęła na II miejscu 🥈w kategorii oraz jako II Najszybsza Torunianka 🏅
+* Krystyna Żyłkowska niezmiennie obroniła szczyt podium 🥇 w swojej kategorii
+
 ## Zdjęcia
 
 ![drużynowe](/assets/photos/{{ page.path | split: "/" | last | split: "." | first }}.jpg)

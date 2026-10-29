@@ -6,6 +6,21 @@ categories:
 
 # XII Memoriał im. Czesława Wasielewskiego
 
+Za nami półmetek Grand Prix kujawsko-pomorskiego po memoriale im. Czesława Wasielewskiego na trasie Lubraniec - Brześć Kujawski!💙
+
+W minioną sobotę ruszyliśmy na południe województwa 30-osobową ekipą parkrun Toruń. 💙 Pogoda zapowiadała się naprawdę świetnie, a że bieg słynie ze świetnej organizacji - humory dopisywały! Pech chciał, że organizator zmienił trasę "płaską jak stół" na nieco bardziej wymagającą, więc podczas biegu szybko musieliśmy skorygować strategię 😉
+Świetne przygotowanie udowodnili Jarek i Sławek, poprawiając swoje życiówki na dystansie 10km! 💪🎖️
+
+Na podium, klasycznie - niebiesko!
+
+* Sylwia Rok była pierwszą 🥇 kobietą w swojej kategorii
+* Edyta Frąk również stanęła na szczycie 🥇 kategorii
+* Tomasz Słuniecki świetnym wynikiem wskoczył na 3. 🥉miejsce podium M50
+* Małgorzata Pazderska zdobyła 2. 🥈 miejsce w swojej kategorii
+* Zbigniew Mączka również zajął 2. 🥈 lokatę kategorii
+* Aleksandra Słuniecka także zawędrowała na 2. 🥈miejsce w swojej kategorii
+* Krystyna Żyłkowska - niezmiennie - szczyt🥇 podium kategorii!
+
 ## Zdjęcia
 
 ![drużynowe](/assets/photos/{{ page.path | split: "/" | last | split: "." | first }}.jpg)

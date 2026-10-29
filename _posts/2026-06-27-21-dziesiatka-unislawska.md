@@ -6,6 +6,15 @@ categories:
 
 # XXI Dziesiątka Unisławska
 
+W ubiegły weekend największe upały zbiegły się z XXI Dziesiątką Unisławską w cyklu GP województwa ☀️☀️☀️
+
+Nie zabrakło tam naszej niebieskiej drużyny 💙, na pobliski wyścig ruszyliśmy aż 34-osobową ekipą! Alerty RCB mówiły "spędź weekend w domu", ale niebiescy łatwo się nie poddają 💪 Wszyscy z uśmiechem dotarli do mety, a nasze Panie zameldowały się na podium:
+
+* Sylwia Rok była 3. 🥉open oraz pierwsza 🥇w kategorii
+* Małgorzata Pazderska stanęła na 3.🥉 pozycji w kategorii
+
+Drużynowo spisaliśmy się doskonale - w tych trudnych warunkach zajęliśmy III miejsce i wracamy z pucharem! 🏆
+
 ## Zdjęcia
 
 ![drużynowe](/assets/photos/{{ page.path | split: "/" | last | split: "." | first }}.jpg)

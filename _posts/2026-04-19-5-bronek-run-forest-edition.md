@@ -6,6 +6,28 @@ categories:
 
 # 5 Bronek Run - Forest Edition
 
+Biegacze z drużyny „parkrun Toruń” dzielnie zmierzyli się z trudnościami crossowych tras zawodów biegowych „V Bronek Run- Forest Edition” w Grudziądzu tj. na dystansach 10 i 5 kilometrów. Pokonanie trasy 10-kilometrowej jest zaliczane do cyklu biegowego „Grand Prix Województwa Kujawsko- Pomorskiego 2026”.
+
+BIEG 10 KM:
+
+Nasz team wywalczył II miejsce w klasyfikacji drużynowej, do którego w głównej mierze przyczyniła się waleczność Edyty Frąk, Bartka Mechlińskiego, Przemka Wojciechowskiego i Dominika Jabłońskiego! 🥈🏆
+
+Zwycięstwa w swoich kategoriach wiekowych odnieśli;
+- Edyta Frąk! 🥇🏆
+- Gosia Pazderska! 🥇🏆
+- Zbyszek Mączka! 🥇🏆
+- Krysia Żyłkowska! 🥇🏆
+
+W dodatkowej klasyfikacji par zwycięstwem mogą poszczycić się;
+- Nika Tarnowska + Bartek Mechliński! 🥇🏆
+
+BIEG 5 KM:
+
+II miejsce w swojej kategorii wiekowej wywalczyła;
+- Gosia Mączka! 🥈🏆
+
+A najważniejsze- było nas dużo, było niebiesko i przede wszystkim była tak charakterystyczna atmosfera stworzona przez naszych biegaczy i kibiców, w której dominowały uśmiechy i życzliwość!
+
 ## Zdjęcia
 
 ![drużynowe](/assets/photos/{{ page.path | split: "/" | last | split: "." | first }}.jpg)

@@ -6,6 +6,19 @@ categories:
 
 # Bieg Nadwiślański
 
+Bieg Nadwiślański w Wagańcu gościł w ubiegły weekend biegaczy z całego województwa. Nie zabrakło tam "naszych" - w wyścigu wystartowało aż 30 zawodników i zawodniczek parkrun Toruń! 💙
+
+To już czwarty bieg w sezonie GP kujawsko-pomorskiego w sezonie, tym razem zaproszono nas na zupełnie nowe wydarzenie na sportowej mapie. Świetna organizacja strefy zawodów i wyjątkowe ugoszczenie na mecie 🍰- tak zapamiętamy sobotni bieg 🙂 Trasa nie należała do łatwych, niemal 3-kilometrowy szutrowy fragment dał się we znaki.
+Na podium - klasycznie - niebiesko! 💙
+
+* Sylwia Rok stanęła na II miejscu 🥈 w kategorii
+* Małgorzata Pazderska zajęła III miejsce 🥉 w kategorii
+* Zbigniew Mączka zdobył "srebro" 🥈 w kategorii
+* Aleksandra Słuniecka stanęła na szczycie 🥇 podium kategorii!
+
+Jakby tego było mało, Agnieszka i Sebastian na tej niełatwej trasie poprawili swoje życiówki na 10km! 💪🏅
+Gratulujemy wszystkim świetnego występu i zapraszamy na wideopodsumowanie. Nasza drużynowa "deska" to już stała tradycja, tym razem Zbigniew Mączka i Jarosław Jaworski wytrzymali aż 4m 15s! 💪
+
 ## Zdjęcia
 
 ![drużynowe](/assets/photos/{{ page.path | split: "/" | last | split: "." | first }}.jpg)

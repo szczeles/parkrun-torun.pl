@@ -6,6 +6,22 @@ categories:
 
 # III Bieg Fabianki na Dychę
 
+Za nami trzeci bieg cyklu GP województwa - zapraszam na podsumowanie "Fabianek na Dychę"
+
+Jaki weekend był - każdy widział - wiało solidnie od soboty rano 🌪️ Ale niebiescy 💙 biegają w każdych warunkach, nie inaczej było i teraz. Na stadionie w Chełmicy-Cukrowni stawiliśmy się w 32 osoby, żeby zmierzyć się z szybką, asfaltową trasą. Na mecie - aż ośmioro z nas na podium!!
+
+* Bartłomiej Mechliński był trzeci 🥉w kategorii wiekowej
+* Sylwia Rok stanęła na szczycie 🥇podium kategorii
+* Edyta Frąk zajęła pierwsze miejsce 🥇 w kategorii
+* Małgorzata Pazderska była druga🥈 w kategorii
+* Zbigniew Mączka był drugi 🥈 w kategorii
+* Krystyna Żyłkowska niezmiennie wskoczyła na szczyt 🥇 w kategorii
+* Aleksandra Słuniecka zajęła III miejsce 🥉 w kategorii
+* Małgorzata Mączka również stanęła na III miejscu 🥉 w kategorii
+
+Pomimo niekorzystnych warunków, Dawid, Ania H. i dwie Agnieszki mają od wczoraj nowe życiówki na dyszce! 💪
+Dodatkowo, drużynowo zajęliśmy trzecie miejsce 🥉 i mamy kolejny piękny puchar z Fabianek! 🏆 
+
 ## Zdjęcia
 
 ![drużynowe](/assets/photos/{{ page.path | split: "/" | last | split: "." | first }}.jpg)
